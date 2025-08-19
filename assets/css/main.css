@@ -8,8 +8,8 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #28CFDD; /* Color for headings, subheadings and title throughout the website */
+  --default-color: #000000; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #5B80E9; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #28CFDD; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -28,15 +28,15 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #e8f8ff;
+  --background-color: #f0f4ff;
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #060606;
+  --background-color: #000000;
   --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #252525;
+  --heading-color: #28CFDD;
+  --surface-color: #1a1a1a;
   --contrast-color: #ffffff;
 }
 
@@ -80,7 +80,7 @@ h6 {
 .pulsating-play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+  background: var(--accent-color);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -102,7 +102,7 @@ h6 {
   border: 5px solid color-mix(in srgb, var(--accent-color), transparent 30%);
   top: -15%;
   left: -15%;
-  background: rgba(198, 16, 0, 0);
+  background: rgba(0, 0, 0, 0);
 }
 
 .pulsating-play-btn:after {
@@ -158,7 +158,7 @@ h6 {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #8B1E6C;
+  background: #5B80E9;
   color: #ffffff;
   text-align: left;
   padding: 15px;
@@ -555,12 +555,12 @@ h6 {
   }
 
   .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
+    background-color: color-mix(in srgb, var(--nav-dropdown-background-color), black 10%);
   }
 
   .navmenu .dropdown>.dropdown-active {
     display: block;
-    background-color: rgba(33, 37, 41, 0.03);
+    background-color: color-mix(in srgb, var(--nav-dropdown-background-color), black 5%);
   }
 
   .mobile-nav-active {
@@ -581,7 +581,7 @@ h6 {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     transition: 0.3s;
   }
 
@@ -973,7 +973,7 @@ section,
 
 .hero .content .why-box .more-btn:hover {
   background: var(--surface-color);
-  color: var(--accent-color);
+  color: var(--default-color);
 }
 
 .hero .content .icon-box {
@@ -1725,47 +1725,47 @@ section,
 
 /* Enhanced gradient backgrounds for hero section */
 .hero {
-  background: linear-gradient(135deg, #e8f8ff 0%, rgba(40, 207, 221, 0.1) 100%);
+  background: linear-gradient(135deg, #f0f4ff 0%, #e6f0ff 100%);
 }
 
 /* Service item hover effects with varied colors */
 .services .service-item:nth-child(1) .service-item:hover {
-  background: linear-gradient(135deg, #28CFDD 0%, #5B80E9 100%);
+  background: linear-gradient(135deg, #28CFDD 0%, #1fb8cc 100%);
   color: white;
   transform: translateY(-5px);
   transition: all 0.3s ease;
 }
 
 .services .service-item:nth-child(2) .service-item:hover {
-  background: linear-gradient(135deg, #B765D3 0%, #E87175 100%);
+  background: linear-gradient(135deg, #5B80E9 0%, #4a6fd6 100%);
   color: white;
   transform: translateY(-5px);
   transition: all 0.3s ease;
 }
 
 .services .service-item:nth-child(3) .service-item:hover {
-  background: linear-gradient(135deg, #5B80E9 0%, #3F2BB0 100%);
+  background: linear-gradient(135deg, #5B80E9 0%, #4a6fd6 100%);
   color: white;
   transform: translateY(-5px);
   transition: all 0.3s ease;
 }
 
 .services .service-item:nth-child(4) .service-item:hover {
-  background: linear-gradient(135deg, #E87175 0%, #8B1E6C 100%);
+  background: linear-gradient(135deg, #28CFDD 0%, #1fb8cc 100%);
   color: white;
   transform: translateY(-5px);
   transition: all 0.3s ease;
 }
 
 .services .service-item:nth-child(5) .service-item:hover {
-  background: linear-gradient(135deg, #3F2BB0 0%, #B765D3 100%);
+  background: linear-gradient(135deg, #5B80E9 0%, #4a6fd6 100%);
   color: white;
   transform: translateY(-5px);
   transition: all 0.3s ease;
 }
 
 .services .service-item:nth-child(6) .service-item:hover {
-  background: linear-gradient(135deg, #28CFDD 0%, #8B1E6C 100%);
+  background: linear-gradient(135deg, #28CFDD 0%, #1fb8cc 100%);
   color: white;
   transform: translateY(-5px);
   transition: all 0.3s ease;
@@ -1781,32 +1781,32 @@ section,
 
 /* Department tabs styling with cyan accent */
 .departments .nav-tabs .nav-link.active {
-  background: linear-gradient(135deg, #28CFDD 0%, #5B80E9 100%);
+  background: linear-gradient(135deg, #28CFDD 0%, #1fb8cc 100%);
   border-color: #28CFDD;
   color: white;
 }
 
 .departments .nav-tabs .nav-link:hover {
-  background: linear-gradient(135deg, #B765D3 0%, #28CFDD 100%);
+  background: linear-gradient(135deg, #5B80E9 0%, #4a6fd6 100%);
   color: white;
-  border-color: #B765D3;
+  border-color: #5B80E9;
 }
 
 /* Stats section icons with varied colors */
 .stats .col-lg-3:nth-child(1) i {
-  background: linear-gradient(135deg, #28CFDD 0%, #5B80E9 100%);
+  background: linear-gradient(135deg, #28CFDD 0%, #1fb8cc 100%);
 }
 
 .stats .col-lg-3:nth-child(2) i {
-  background: linear-gradient(135deg, #B765D3 0%, #E87175 100%);
+  background: linear-gradient(135deg, #5B80E9 0%, #4a6fd6 100%);
 }
 
 .stats .col-lg-3:nth-child(3) i {
-  background: linear-gradient(135deg, #3F2BB0 0%, #28CFDD 100%);
+  background: linear-gradient(135deg, #28CFDD 0%, #1fb8cc 100%);
 }
 
 .stats .col-lg-3:nth-child(4) i {
-  background: linear-gradient(135deg, #E87175 0%, #8B1E6C 100%);
+  background: linear-gradient(135deg, #5B80E9 0%, #4a6fd6 100%);
 }
 
 /* About section list items with different colors */
@@ -1815,11 +1815,11 @@ section,
 }
 
 .about .content ul li:nth-child(2) i {
-  color: #B765D3;
+  color: #5B80E9;
 }
 
 .about .content ul li:nth-child(3) i {
-  color: #E87175;
+  color: #28CFDD;
 }
 
 /* Team member social links with cyan */
@@ -1828,12 +1828,12 @@ section,
 }
 
 .doctors .team-member .social a:hover {
-  background: #8B1E6C;
+  background: #5B80E9;
 }
 
 /* FAQ items with cyan accents */
 .faq .faq-container .faq-item.faq-active {
-  background: linear-gradient(135deg, #28CFDD 0%, #5B80E9 100%);
+  background: linear-gradient(135deg, #28CFDD 0%, #1fb8cc 100%);
   border-color: #28CFDD;
 }
 
@@ -1847,7 +1847,7 @@ section,
 
 /* Testimonial enhancements with cyan theme */
 .testimonials {
-  background: linear-gradient(135deg, #e8f8ff 0%, rgba(40, 207, 221, 0.08) 100%);
+  background: linear-gradient(135deg, #f0f4ff 0%, #e6f0ff 100%);
 }
 
 /* Gallery hover effects */
@@ -1862,49 +1862,49 @@ section,
 }
 
 .contact .info-item:nth-child(2) i {
-  background: #B765D3;
+  background: #5B80E9;
 }
 
 .contact .info-item:nth-child(3) i {
-  background: #E87175;
+  background: #28CFDD;
 }
 
 /* Header top bar with cyan */
 .header .topbar {
-  background: linear-gradient(135deg, #28CFDD 0%, #5B80E9 100%);
+  background: linear-gradient(135deg, #28CFDD 0%, #1fb8cc 100%);
 }
 
-/* CTA button with magenta accent */
+/* CTA button with blue accent */
 .header .cta-btn {
-  background: linear-gradient(135deg, #8B1E6C 0%, #B765D3 100%);
+  background: linear-gradient(135deg, #5B80E9 0%, #4a6fd6 100%);
 }
 
 .header .cta-btn:hover {
-  background: linear-gradient(135deg, #B765D3 0%, #E87175 100%);
+  background: linear-gradient(135deg, #28CFDD 0%, #1fb8cc 100%);
 }
 
 /* Why box in hero with varied gradient */
 .hero .content .why-box {
-  background: linear-gradient(135deg, #8B1E6C 0%, #3F2BB0 100%);
+  background: linear-gradient(135deg, #5B80E9 0%, #4a6fd6 100%);
 }
 
 /* Scroll to top button with cyan focus */
 .scroll-top {
-  background: linear-gradient(135deg, #28CFDD 0%, #5B80E9 100%);
+  background: linear-gradient(135deg, #28CFDD 0%, #1fb8cc 100%);
 }
 
 .scroll-top:hover {
-  background: linear-gradient(135deg, #B765D3 0%, #8B1E6C 100%);
+  background: linear-gradient(135deg, #5B80E9 0%, #4a6fd6 100%);
 }
 
 /* Section title underlines with varied colors */
 .section-title h2::after {
-  background: linear-gradient(90deg, #28CFDD 0%, #B765D3 50%, #E87175 100%);
+  background: linear-gradient(90deg, #28CFDD 0%, #1fb8cc 100%);
 }
 
 /* Pulsating play button with cyan */
 .pulsating-play-btn {
-  background: radial-gradient(#28CFDD 50%, color-mix(in srgb, #28CFDD, transparent 75%) 52%);
+  background: #28CFDD;
 }
 
 .pulsating-play-btn:before {
