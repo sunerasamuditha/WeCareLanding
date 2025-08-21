@@ -288,7 +288,7 @@ h6 {
 .header .cta-btn,
 .header .cta-btn:focus {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #B765D3;
   font-size: 14px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
@@ -299,7 +299,7 @@ h6 {
 .header .cta-btn:hover,
 .header .cta-btn:focus:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, #B765D3, transparent 15%);
 }
 
 @media (max-width: 1200px) {
@@ -929,6 +929,7 @@ section,
   margin: 0;
   font-size: 48px;
   font-weight: 700;
+  color: #B765D3;
 }
 
 .hero .welcome p {
@@ -942,7 +943,7 @@ section,
 
 .hero .content .why-box {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #B765D3;
   padding: 30px;
   border-radius: 4px;
 }
@@ -1219,7 +1220,7 @@ section,
 }
 
 .appointment .php-email-form button[type=submit] {
-  background: var(--accent-color);
+  background: #B765D3;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1228,7 +1229,7 @@ section,
 }
 
 .appointment .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+  background: color-mix(in srgb, #B765D3 90%, white 15%);
 }
 
 /*--------------------------------------------------------------
@@ -1725,7 +1726,7 @@ section,
 
 /* Enhanced gradient backgrounds for hero section */
 .hero {
-  background: linear-gradient(135deg, #f0f4ff 0%, #e6f0ff 100%);
+  background: linear-gradient(135deg, #B765D3 0%, #a355c9 100%);
 }
 
 /* Service item hover effects with varied colors */
@@ -1885,7 +1886,7 @@ section,
 
 /* Why box in hero with varied gradient */
 .hero .content .why-box {
-  background: linear-gradient(135deg, #5B80E9 0%, #4a6fd6 100%);
+  background: linear-gradient(135deg, #B765D3 0%, #a355c9 100%);
 }
 
 /* Scroll to top button with cyan focus */
