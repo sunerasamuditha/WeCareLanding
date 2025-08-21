@@ -1877,7 +1877,7 @@ section,
 
 /* CTA button with blue accent */
 .header .cta-btn {
-  background: linear-gradient(135deg, #B765D3 0%, #4a6fd6 100%);
+  background: linear-gradient(135deg, #B765D3 0%, #8b4ad6 100%);
 }
 
 .header .cta-btn:hover {
