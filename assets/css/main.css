@@ -1789,8 +1789,7 @@ section,
 .departments .nav-tabs .nav-link:hover {
   background: transparent;
   color: var(--heading-color);
-  color: white;
-  border-color: #5B80E9;
+  border-color: color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 /* Stats section icons with varied colors */
