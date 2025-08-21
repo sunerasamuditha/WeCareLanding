@@ -274,7 +274,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 80px;
   margin-right: 8px;
 }
 
@@ -1254,13 +1254,13 @@ section,
 }
 
 .departments .nav-link:hover {
-  color: var(--accent-color);
+  color: var(--heading-color);
 }
 
 .departments .nav-link.active {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-  background-color: var(--background-color);
+  color: var(--heading-color);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  background-color: transparent;
 }
 
 .departments .tab-pane.active {
@@ -1779,15 +1779,16 @@ section,
   color: white;
 }
 
-/* Department tabs styling with cyan accent */
+/* Department tabs styling - neutral colors */
 .departments .nav-tabs .nav-link.active {
-  background: linear-gradient(135deg, #28CFDD 0%, #1fb8cc 100%);
-  border-color: #28CFDD;
-  color: white;
+  background: transparent;
+  border-color: color-mix(in srgb, var(--heading-color), transparent 90%);
+  color: var(--heading-color);
 }
 
 .departments .nav-tabs .nav-link:hover {
-  background: linear-gradient(135deg, #5B80E9 0%, #4a6fd6 100%);
+  background: transparent;
+  color: var(--heading-color);
   color: white;
   border-color: #5B80E9;
 }
