@@ -167,6 +167,9 @@ document.addEventListener("DOMContentLoaded", function () {
       if (response.ok) {
         success = true;
         showMessage("success", getSuccessMessage(formType));
+        setInterval(() => {
+          window.location.href = "./index.html";
+        }, 1500);
       } else {
         throw new Error("Request failed");
       }
