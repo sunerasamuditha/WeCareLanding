@@ -281,17 +281,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Real-time validation
-  document.addEventListener("input", function (e) {
-    if (e.target.matches(".form-control")) {
-      if (e.target.hasAttribute("required") && !e.target.value.trim()) {
-        e.target.classList.add("is-invalid");
-        e.target.classList.remove("is-valid");
-      } else {
-        e.target.classList.remove("is-invalid");
-        e.target.classList.add("is-valid");
-      }
-    }
-  });
+  // document.addEventListener("input", function (e) {
+  //   if (e.target.matches(".form-control")) {
+  //     if (e.target.hasAttribute("required") && !e.target.value.trim()) {
+  //       // e.target.classList.add("is-invalid");
+  //       e.target.classList.remove("is-valid");
+  //     } else {
+  //       e.target.classList.remove("is-invalid");
+  //       e.target.classList.add("is-valid");
+  //     }
+  //   }
+  // });
 
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -433,7 +433,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         
         .form-control.is-invalid {
-            border-color: #dc3545;
+            border-color: #4b0082;
             box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
         }
         
